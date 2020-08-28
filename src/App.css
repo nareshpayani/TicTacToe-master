@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: #0B233F;
+  
+}
+
+.GameName{
+  position: absolute;
+  top: 47px;
+  left: 68px;
+  width: 42px;
+  height: 58px;
+  background: transparent url('./img/TicTacToe.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+/* Welcom component css */
+
+.DashBorder {
+  position: absolute;
+  top: 144px;
+  left: 50%;
+  margin-left: -240px;
+  width: 480px;
+  height: 480px;
+  border: 2px dashed #FFFFFF;
+  border-radius: 46px;
+  opacity: 0.11;
+}
+
+.MainRectangle {
+  position:absolute;
+  top: 162px;
+  left: 50%;
+  margin-left: -222px;
+  width: 444px;
+  height: 444px;
+  background: #253952 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #000000DD;
+  border-radius: 46px;
+  opacity: 1;
+}
+
+.NameBox{
+  position: absolute;
+  top: 219px;
+  left: 50%;
+  margin-left: -150.5px;
+  width: 301px;
+  height: 32px;
+  text-align: left;
+  letter-spacing: 0.83px;
+  opacity: 1;
+}
+
+.BoxLeft{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 153px;
+  height: 32px;
+  text-align: left;
+  font: normal normal normal 23px/25px "Poppins";
+  letter-spacing: 0.83px;
+  color: #F0F0F0;
+}
+
+.BoxRight {
+  position: absolute;
+  top: 0px;
+  left: 153px;
+  width: 148px;
+  height: 32px;
+  text-align: left;
+  font: normal normal 600 23px/25px "Poppins";
+  letter-spacing: 0.83px;
+  color: #FBA202;
+}
+
+.PlayerOneBox{
+  position: absolute;
+  top: 285px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  height: 74px;
+  opacity: 1;
+}
+
+.PlayerOneText {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 53px;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 12px/16px "Poppins";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.PlayerOneName{
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  width: 295px;
+  height: 45px;
+  border: 1px solid #F0F0F0;
+  border-radius: 2px;
+  opacity: 1;
+  color: #FFFFFF;
+  background: transparent;
+  padding: 0 10px;
+}
+
+.PlayerTwoBox {
+  position: absolute;
+  top: 392px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  height: 74px;
+  opacity: 1;
+}
+
+.PlayerTwoText {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 51px;
+  height: 17px;
+  text-align: left;
+  font: normal normal normal 12px/18px "Poppins";
+  letter-spacing: 0px;
+  color: #F0F0F0;
+  opacity: 1;
+}
+.PlayerTwoName {
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  width: 295px;
+  height: 45px;
+  border: 1px solid #F0F0F0;
+  border-radius: 2px;
+  opacity: 1;
+  color: #FFFFFF;
+  background: transparent;
+  padding: 0 10px;
+}
+
+.Continue {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  height: 49px;
+  background: transparent linear-gradient(270deg, #FBA202 0%, #FF5800 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #000000;
+  border-radius: 2px;
+  opacity: 1;
+}
+
+.ContinueText {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -32px;
+  width: 64px;
+  height: 20px;
+  text-align: left;
+  font: normal normal normal 14px/21px Poppins;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+/* Player Box Component css */
+
+.Box{
+  position: absolute;
+  top: 316px;
+  /* left: 10%; */
+  width: 123px;
+  height: 137px;
+  background: #253952 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.Turn {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  margin-left: -45.5px;
+  width: 91px;
+  height: 28px;
+  text-align: left;
+  font: normal normal 21px "Roboto";
+  letter-spacing: 0px;
+  color: #FB9E01;
+  opacity: 1;
+  text-align: center;
+}
+
+.BoxPlayer {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -23px;
+  width: 46px;
+  height: 13px;
+  text-align: center;
+  font: normal normal 10px "Roboto";
+  letter-spacing: 0px;
+  color: #FB9E01;
+  opacity: 1;
+  /* border: 2px dashed #FFFFFF; */
+
+}
+
+.BoxPlayerName {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -38px;
+  width: 76px;
+  height: 24px;
+  text-align: center;
+  font: normal normal  18px "Roboto";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: center;
+}
+
+.BoxPlayerImg{
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -21.5px;
+  width: 43px;
+  height: 43px;
+  background: transparent url('./img/closesm2.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+}
+
+.CircleLine {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 123px;
+  height: 10px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px dashed #FFFFFF; */
+
+}
+.Circle {
+  width: 10px;
+  height: 10px;
+  background: #253952 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+/* CheckBox component css */
+
+.Line1{
+  position: absolute;
+  top: 0px;
+  left: 151px;
+  width: 1px;
+  height: 440px;
+  background-image: linear-gradient(  rgb(37,57,82) 33%,  rgb(245,245,245) 0%);
+  background-position: right;
+  background-size: 2px 30px;
+  background-repeat: repeat-y;
+  opacity: 0.11;
+}
+.Line2{
+  position: absolute;
+  top: 0px;
+  left: 291px;
+  width: 1px;
+  height: 440px;
+  background-image: linear-gradient(  rgb(37,57,82) 33%,  rgb(245,245,245) 0%);
+  background-position: right;
+  background-size: 2px 30px;
+  background-repeat: repeat-y;
+  opacity: 0.11;
+}
+.Line3 {
+  position: absolute;
+  top: 151px;
+  left: 0px;
+  width: 440px;
+  height: 1px;
+  background-image: linear-gradient(to right,  rgb(37,57,82) 33%,  rgb(245,245,245)  0%);
+  background-position: bottom;
+  background-size: 30px 2px;
+  background-repeat: repeat-x;
+  opacity: 0.11;
+}
+
+.Line4 {
+  position: absolute;
+  top: 292px;
+  left: 0px;
+  width: 440px;
+  height: 1px;
+  background-image: linear-gradient(to right,  rgb(37,57,82) 33%,  rgb(245,245,245)  0%);
+  background-position: bottom;
+  background-size: 30px 2px;
+  background-repeat: repeat-x;
+  opacity: 0.11;
+}
+
+.grid {
+  position: absolute;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 420px;
+  height: 420px;
+  top: 50%;
+  left: 50%;
+  margin-left: -210px;
+  margin-top: -210px;
+}
+
+.grid > div {
+  padding: 10px;
+  /* background-color: #ccc; */
+  justify-content: center;
+  text-align: center;
+}
+
+.GridImg {
+  position: relative;
+  margin-left: 30px;
+  margin-top: 20px;
+  background: transparent 0% 0% no-repeat padding-box;
+}
+
+.GridCircle {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  width: 50px;
+  height: 50px;
+  border: 13px solid #FFFFFF;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.NewGame {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  height: 49px;
+  background: transparent linear-gradient(270deg, #FBA202 0%, #FF5800 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #000000;
+  border-radius: 2px;
+  opacity: 1;
+}
+
+.NewGameText {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  font: normal normal normal 14px/21px Poppins;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  /* border: 2px dashed #FFFFFF; */
+}
+
+.PlayerCircle {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  margin-left: -25px;
+  width: 30px;
+  height: 30px;
+  border: 10px solid #FFFFFF;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.ResultBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 230px;
+  height: 256px;
+  background: #253952 0% 0% no-repeat padding-box;
+  border: 3px solid #FB9E01;
+  opacity: 1;
+  margin-left: -115px;
+  margin-top: -128px;
+  background: #253952 0% 0% no-repeat padding-box;
+  border-radius: 45px;
+}
+
+.Winner {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  margin-left: -72px;
+  width: 145px;
+  height: 48px;
+  text-align: center;
+  font: normal normal 34px "Poppins";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: center;
+}
+
+.ResultBoxPlayer {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -39.5px;
+  width: 79px;
+  height: 24px;
+  text-align: center;
+  font: normal normal 16px Roboto;
+  letter-spacing: 0px;
+  color: #FB9E01;
+  opacity: 1;  
+}
+
+.ResultBoxPlayerName {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 44px;
+  text-align: center;
+  font: normal normal 34px "Roboto";
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.ResultBoxPlayerImg{
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  background: transparent url('./img/closelg.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.ResultPlayerCircle {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -40px;
+  width: 60px;
+  height: 60px;
+  border: 10px solid #FFFFFF;
+  opacity: 1;
+  border-radius: 50%;
+}
